@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy policy: SortKeeper for Confluence</title>
+<style>
+:root{--bg:#f6f7f9;--fg:#1d2433;--muted:#5d6578;--line:#dde1e8;--accent:#0f3d3e;--gold:#e09f3e}
+@media (prefers-color-scheme:dark){:root{--bg:#12161f;--fg:#e8ebf2;--muted:#a3abbd;--line:#2c3447;--accent:#7cc4c5;--gold:#f0c26b}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 "Segoe UI",system-ui,sans-serif}
+main{max-width:760px;margin:0 auto;padding:32px 18px 64px}
+header{display:flex;align-items:center;gap:12px;margin-bottom:28px}
+.mark{width:40px;height:40px;border-radius:9px;background:var(--accent);color:#fff;display:grid;place-items:center;font:700 18px Georgia,serif}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:1.15rem}
+h1{font:700 2rem/1.15 Georgia,serif;margin:0 0 12px}h2{margin:32px 0 8px;font-size:1.3rem}h3{font-size:1.1rem}
+a{color:var(--accent)}code{background:var(--line);padding:1px 5px;border-radius:4px}
+.app{border:1px solid var(--line);border-radius:12px;padding:18px;margin:14px 0;background:color-mix(in srgb,var(--bg) 70%,#fff)}
+.app h2{margin:0 0 6px}.muted{color:var(--muted)}footer{margin-top:48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:16px}
+</style></head><body><main>
+<header><span class="mark">CL</span><a href="../index.html">ClearLedger Apps</a></header>
+<h2>Privacy Policy: SortKeeper for Confluence</h2>
+<p>Effective date: October 2, 2026</p>
+<p>Publisher: Vivien Morvan, trading as ClearLedger Apps, Mendoza, Argentina</p>
+<p>Contact: hola@tutiendapropiaweb.com</p>
+<p>This policy explains what SortKeeper for Confluence ("the app") does with data. It is written to be short and exact.</p>
+<h3>1. In one paragraph</h3>
+<p>SortKeeper is an Atlassian Forge app. It runs and stores data on the Atlassian platform, inside the Atlassian cloud site where an administrator installed it. The publisher does not receive, copy or access your data, and the app sends nothing to any other service.</p>
+<h3>2. Where the app runs</h3>
+<ul><li>All code runs on Atlassian Forge infrastructure.</li><li>All data is stored in Forge storage attached to your Atlassian site, in the data residency region applicable to your site.</li><li>The app declares no external network access (no "egress"). It cannot send data to the publisher or to any third party, and it uses no analytics, tracking, advertising or error-reporting service.</li></ul>
+<h3>3. What data the app reads</h3>
+<p>Through the Confluence REST API:</p>
+<ul><li>Page identifiers, titles, status, parent and position of pages, to decide the order. Page content is not read.</li><li>Whether a page has a view restriction (not who it is restricted to), so that restricted pages are never moved.</li><li>Space identifier, key, name and home page, and whether the current user administers the space.</li></ul>
+<h3>4. What the app changes</h3>
+<p>It changes the position of pages in the page tree (move before or after a sibling). It does not change content, titles, permissions or labels, and does not delete or archive anything.</p>
+<h3>5. What data the app stores</h3>
+<p>In Forge storage on your site:</p>
+<ul><li>The sorting rules of each space (space, page or space target, order, include sub-pages, who set it and when: Atlassian account identifier and timestamps).</li><li>A journal of the last operations (time, identifier of the parent page or "top level", number of moves, counts, short message). <strong>No page title is stored in it</strong>: titles are read again, as the administrator who opens the screen, and shown only if that administrator can view the page. Entries expire after 30 days.</li><li>The page order saved before a manual sort, for "Undo last sort" (page identifiers only; expires after 30 days or when used).</li><li>Working data: locks, run progress, and the last known title of recently edited pages in spaces that have a sorting rule (this cache expires after 30 days; nothing is stored for spaces without a rule).</li></ul>
+<p>Data is deleted when the app is uninstalled, according to Atlassian's Forge storage rules.</p>
+<h3>6. Sharing and subprocessors</h3>
+<p>The publisher shares no data with anyone because it receives none. Atlassian is the platform provider and processes data under its own terms.</p>
+<h3>7. Your rights</h3>
+<p>Because the publisher holds no personal data from your site, requests about personal data go to your site administrator or to Atlassian. For anything about this app, write to hola@tutiendapropiaweb.com.</p>
+<h3>8. Changes</h3>
+<p>Material changes will be announced in the Marketplace listing and release notes.</p>
+<footer>ClearLedger Apps · hola@tutiendapropiaweb.com</footer>
+</main></body></html>
